@@ -4,6 +4,8 @@ import SectionParagraph from "../components/molecules/SectionParagraph";
 import Head from "next/head";
 import Partner from "../components/organisms/Partner";
 import Programs from "../components/organisms/Programs";
+import AboutUs from "../components/organisms/AboutUs";
+import Container from "../components/templates/Container";
 
 export default function Home() {
   return (
@@ -17,6 +19,7 @@ export default function Home() {
         <link rel="icon" href="/images/Logo.svg" />
       </Head>
       {/* hero section */}
+      <Container>
       <section className="font-ssp w-full h-fit min-h-screen bg-white flex justify-center items-center mx-auto">
         <SectionParagraph
           isButton={true}
@@ -38,11 +41,20 @@ export default function Home() {
         </aside>
       </section>
       {/* partner brand */}
-      <section id="brand" className="w-full py-8 flex flex-col justify-center items-center">
+      <section
+        id="brand"
+        className="w-full py-8 flex flex-col justify-center items-center"
+      >
         <Partner />
       </section>
-      <section className="w-full h-fit py-6">
+      {/* list programs */}
+      <section id="program" className="w-full h-fit py-6">
         <Programs />
+      </section>
+      </Container>
+      {/* about us */}
+      <section className="w-full h-fit min-h-screen bg-crayolalight my-10 flex items-center justify-center">
+        <AboutUs />
       </section>
     </PageTemplate>
   );

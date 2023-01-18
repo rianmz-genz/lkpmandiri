@@ -1,7 +1,6 @@
 import React from "react";
 import Text from "../atoms/Text";
 import Button from "./Button";
-import Link from "next/link";
 interface Paragraph {
   buttonStyle?: string;
   title: string;
@@ -49,16 +48,16 @@ const SectionParagraph = ({
           ""
         )}
         {learnMore ? (
-          <Link href={`#program`}>
+          <a href={`#program`}>
             <Text textStyle="MoreUnderline" value="Pelajari Lebih Lanjut" />
-          </Link>
+          </a>
         ) : (
           ""
         )}
       </div>
       {learnMore ? (
         <>
-        {/* space for span because this is absolute */}
+        {/* space for span because span absolute */}
           <div className="h-28"></div>
           <div className="w-8/12 border absolute bottom-0 left-2 border-crayoladark z-20 flex py-7 rounded-xl bg-white">
             <div className="flex flex-col w-4/12 items-center">

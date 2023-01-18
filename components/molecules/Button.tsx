@@ -9,9 +9,9 @@ const Button = ({ value, buttonStyle }: ButtonProps) => {
     const getButtonStyle = ():string => {
         switch(buttonStyle){
             case "ButtonBlue":
-                return "bg-crayolalight text-white hover:bg-crayolamidledark transition-all duration-300";
+                return "bg-crayolalight text-white hover:bg-crayolamidledark transition-all duration-300 border-none outline-none";
             case "ButtonWhite":
-                return "hover:text-crayolalight transition-all duration-300 text-white hover:bg-white"
+                return "text-crayolalight transition-all duration-300 hover:text-white bg-white hover:bg-transparent"
         }
     }
   return (

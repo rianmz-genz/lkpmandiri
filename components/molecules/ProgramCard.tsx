@@ -20,7 +20,7 @@ const ProgramCard = ({
 }: ProgramCards) => {
     const router = useRouter()
     const handleClick = () => {
-        router.push("/clas/detail")
+        router.push("/class/detail")
     }
   return (
     <div onClick={handleClick} className='w-full h-fit py-2'>

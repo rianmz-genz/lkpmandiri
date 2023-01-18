@@ -22,7 +22,9 @@ const PageTemplate = ({
         <Container>
           <NavBar />
           <div className="h-[50px]"></div>
-          {children}
+        </Container>
+        {children}
+        <Container>
           <BannerRegist />
           <Faq />
         </Container>
