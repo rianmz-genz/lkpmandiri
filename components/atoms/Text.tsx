@@ -12,6 +12,8 @@ interface TextProps {
     | "FaqListTitle"
     | "ButtonText"
     | "FooterTitle"
+    | "UserNameReview"
+    | "UserClassReview"
     | "MoreUnderline";
 }
 const Text = ({ textStyle, value }: TextProps) => {
@@ -37,6 +39,10 @@ const Text = ({ textStyle, value }: TextProps) => {
         return "font-semibold";
       case "CompanyName":
         return "font-bold text-gray-800/80 text-lg";
+      case "UserNameReview":
+        return "font-semibold text-sm";
+      case "UserClassReview": 
+        return "font-poppins font-light text-xs"
       case "MoreUnderline":
         return "font-semibold underline";
       default:

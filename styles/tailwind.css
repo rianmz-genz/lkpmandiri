@@ -6,3 +6,17 @@
         scroll-behavior: smooth;
     }
 }
+@layer components {
+    .swiper {
+      @apply px-4 sm:px-24 md:px-36 lg:px-64 xl:px-72 pb-24 !important;
+    }
+    .swiper-pagination {
+      @apply flex flex-row justify-center !important;
+    }
+    .swiper-pagination-bullet {
+      @apply bg-crayolalight bg-opacity-90 w-4 h-4 !important;
+    }
+    /* .swiper-pagination-bullet-active {
+      @apply bg-crayolalight last: !important;
+    } */
+  }

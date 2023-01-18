@@ -6,6 +6,7 @@ import Partner from "../components/organisms/Partner";
 import Programs from "../components/organisms/Programs";
 import AboutUs from "../components/organisms/AboutUs";
 import Container from "../components/templates/Container";
+import UsersReview from "../components/organisms/UsersReview";
 
 export default function Home() {
   return (
@@ -56,6 +57,10 @@ export default function Home() {
       <section className="w-full h-fit min-h-screen bg-crayolalight my-10 flex items-center justify-center">
         <AboutUs />
       </section>
+      {/* user review */}
+      <section className="w-full h-fit my-10 px-[60px]">
+        <UsersReview />
+      </section>♦  
     </PageTemplate>
   );
 }
