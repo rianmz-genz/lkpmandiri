@@ -47,6 +47,7 @@ const Programs = () => {
         <div className='columns-2 px-4 gap-6 space-y-6'>
             {Programs.map((program) => (
                 <ProgramCard 
+                    key={program.imageUrl}
                     imageUrl={program.imageUrl}
                     title={program.title}
                     description={program.description}

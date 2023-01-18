@@ -29,7 +29,7 @@ const Partner = () => {
         />
         <ul className='w-full flex mt-8'>
         {PartnerList.map((partner)=> (
-            <li className='w-3/12'>
+            <li key={partner.imageSrc} className='w-3/12'>
                 <LogoPartner imageSrc={partner.imageSrc} logoName={partner.logoName} />
             </li>
         ))}

@@ -12,6 +12,11 @@ export default function Home() {
   return (
     <PageTemplate>
       <Head>
+        <meta property="og:site_name" content="lkpmandiri.vercel.app" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="geo.country" content="id" />
+        <meta name="geo.placename" content="Indonesia" />
         <meta
           name="description"
           content="Company Profile Slicing Design By Adrian Aji Septa"
@@ -21,37 +26,37 @@ export default function Home() {
       </Head>
       {/* hero section */}
       <Container>
-      <section className="font-ssp w-full h-fit min-h-screen bg-white flex justify-center items-center mx-auto">
-        <SectionParagraph
-          isButton={true}
-          learnMore={true}
-          buttonValue="Daftar Kursus"
-          buttonStyle="ButtonBlue"
-          titleStyle="TitleOne"
-          title="Advance your career with LKP MANDIRI"
-          description="Tingkatkan kemampuanmu untuk masa depan yang lebih baik dengan program pelatihan komprehensif secara gratis"
-        />
-        <aside className="w-6/12">
-          <Image
-            src="/images/HeroIllustration.svg"
-            className="w-full"
-            width={100}
-            height={100}
-            alt="Hero image"
+        <section className="font-ssp w-full h-fit min-h-screen bg-white flex justify-center items-center mx-auto">
+          <SectionParagraph
+            isButton={true}
+            learnMore={true}
+            buttonValue="Daftar Kursus"
+            buttonStyle="ButtonBlue"
+            titleStyle="TitleOne"
+            title="Advance your career with LKP MANDIRI"
+            description="Tingkatkan kemampuanmu untuk masa depan yang lebih baik dengan program pelatihan komprehensif secara gratis"
           />
-        </aside>
-      </section>
-      {/* partner brand */}
-      <section
-        id="brand"
-        className="w-full py-8 flex flex-col justify-center items-center"
-      >
-        <Partner />
-      </section>
-      {/* list programs */}
-      <section id="program" className="w-full h-fit py-6">
-        <Programs />
-      </section>
+          <aside className="w-6/12">
+            <Image
+              src="/images/HeroIllustration.svg"
+              className="w-full"
+              width={100}
+              height={100}
+              alt="Hero image"
+            />
+          </aside>
+        </section>
+        {/* partner brand */}
+        <section
+          id="brand"
+          className="w-full py-8 flex flex-col justify-center items-center"
+        >
+          <Partner />
+        </section>
+        {/* list programs */}
+        <section id="program" className="w-full h-fit py-6">
+          <Programs />
+        </section>
       </Container>
       {/* about us */}
       <section className="w-full h-fit min-h-screen bg-crayolalight my-10 flex items-center justify-center">
@@ -60,7 +65,8 @@ export default function Home() {
       {/* user review */}
       <section className="w-full h-fit my-10 px-[60px]">
         <UsersReview />
-      </section>♦  
+      </section>
+      ♦
     </PageTemplate>
   );
 }
