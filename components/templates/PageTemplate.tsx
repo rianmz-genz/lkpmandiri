@@ -17,15 +17,12 @@ const PageTemplate = ({
     <>
       <Head>
         <title>{title}</title>
-        <meta name="description" content="Company Profile Slicing Design By Adrian Aji Septa" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/images/LogoFooter.svg" />
       </Head>
       <div className="w-full">
         <Container>
           <NavBar />
           <div className="h-[50px]"></div>
-            {children}
+          {children}
           <BannerRegist />
           <Faq />
         </Container>
