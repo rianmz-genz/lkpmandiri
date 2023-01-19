@@ -21,12 +21,16 @@ export default function Home() {
           name="description"
           content="Company Profile Slicing Design By Adrian Aji Septa"
         />
+        <meta
+          name="title"
+          content="LKP MANDIRI"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/Logo.svg" />
       </Head>
       {/* hero section */}
       <Container>
-        <section className="font-ssp w-full h-fit min-h-screen bg-white lg:flex-row flex-col-reverse flex justify-center items-center pt-8 lg:pt-0 mx-auto">
+        <section className="font-ssp w-full h-fit min-h-screen bg-white lg:flex-row flex-col-reverse flex justify-center items-center lg:pt-0 mx-auto">
           <SectionParagraph
             isButton={true}
             learnMore={true}
@@ -66,7 +70,6 @@ export default function Home() {
       <section className="w-full h-fit my-10 px-[60px]">
         <UsersReview />
       </section>
-      ♦
     </PageTemplate>
   );
 }

@@ -23,7 +23,7 @@ const SectionParagraph = ({
 }: Paragraph) => {
   return (
     <aside
-      className={`kg:w-6/12 w-full h-fit space-y-8 relative ${
+      className={`lg:w-6/12 w-full h-fit space-y-8 relative ${
         center ? "text-center flex flex-col items-center justify-center" : ""
       }`}
     >

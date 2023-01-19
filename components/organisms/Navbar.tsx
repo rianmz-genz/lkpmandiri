@@ -35,7 +35,7 @@ const NavBar = () => {
         <Container>
           <div
             className={`px-6 py-4 w-full backdrop-blur-3xl lg:rounded-none rounded-lg ${
-              isScrolled || isOpen ? "" : "lg:bg-transparent lg:px-0"
+              isScrolled || isOpen ? "" : "bg-transparent lg:px-0"
             }`}
           >
             <div className="flex flex-col lg:flex-row w-full place-content-between lg:place-items-center">

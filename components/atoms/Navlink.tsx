@@ -12,9 +12,9 @@ const NavLink = ({ href, value, canActive = false, isOpen }: Props) => {
   return (
       <Link className={`${isOpen ? "" : "hidden"} lg:block`} href={href} passHref>
         <p
-          className={`text-base font-semibold ${
+          className={`text-base ${
             router.pathname == href && canActive
-              ? 'font-bold'
+              ? 'font-semibold'
               : 'text-opacity-80'
           } cursor-pointer`}
         >

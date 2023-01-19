@@ -30,7 +30,7 @@ const Text = ({ textStyle, value }: TextProps) => {
       case "Description":
         return "font-poppins font-light text-base leading-6";
       case "CardDescription":
-        return "font-poppins font-light lg:text-sm text-xs leading-6";
+        return "font-poppins font-light text-sm leading-6 text-elipsis lg:h-24 inline-block overflow-hidden";
       case "CardPlus":
         return "font-poppins font-light text-xs";
       case "ButtonText":

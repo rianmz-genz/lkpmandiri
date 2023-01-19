@@ -23,7 +23,7 @@ const ProgramCard = ({
         router.push("/class/detail")
     }
   return (
-    <div onClick={handleClick} className='w-full h-fit py-2'>
+    <div className='w-full h-fit py-2'>
         <Image src={imageUrl} height={100} className='w-full' alt='Card Image' width={100} />
         <Text 
             textStyle='TitleFour'
@@ -46,7 +46,7 @@ const ProgramCard = ({
                     />
                 </div>
             </div>
-            <div className='lg:w-4/12 w-6/12 flex justify-between'>
+            <div  onClick={handleClick} className='lg:w-8/12 w-6/12 flex justify-between'>
                 <Text 
                     textStyle='ButtonText'
                     value={meet}
