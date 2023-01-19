@@ -44,7 +44,7 @@ const Programs = () => {
             title='Program - program terbaik untuk mengawali karirmu'
             titleStyle='TitleTwo'
         />
-        <div className='columns-2 px-4 gap-6 space-y-6'>
+        <div className='lg:columns-2 px-4 gap-6 space-y-6'>
             {Programs.map((program) => (
                 <ProgramCard 
                     key={program.imageUrl}

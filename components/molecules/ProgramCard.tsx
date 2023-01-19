@@ -34,7 +34,7 @@ const ProgramCard = ({
             value={description}
         /> 
         <div className='w-full flex justify-between mt-4'>
-            <div className='w-8/12 relative'>
+            <div className='lg:w-8/12 w-6/12 relative'>
                 <Image className='absolute left-0' src="/images/Ellipse 5.svg" width={30} height={30} alt="Profile" />
                 <Image className='absolute left-4' src="/images/Ellipse 6.svg" width={30} height={30} alt="Profile" />
                 <Image className='absolute left-8' src="/images/Ellipse 7.svg" width={30} height={30} alt="Profile" />
@@ -46,7 +46,7 @@ const ProgramCard = ({
                     />
                 </div>
             </div>
-            <div className='w-4/12 flex justify-between'>
+            <div className='lg:w-4/12 w-6/12 flex justify-between'>
                 <Text 
                     textStyle='ButtonText'
                     value={meet}

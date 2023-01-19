@@ -5,11 +5,12 @@ interface Props {
   href: string
   value: string
   canActive?: boolean
+  isOpen?: boolean
 }
-const NavLink = ({ href, value, canActive = false }: Props) => {
+const NavLink = ({ href, value, canActive = false, isOpen }: Props) => {
   const router = useRouter()
   return (
-      <Link href={href} passHref>
+      <Link className={`${isOpen ? "" : "hidden"} lg:block`} href={href} passHref>
         <p
           className={`text-base font-semibold ${
             router.pathname == href && canActive

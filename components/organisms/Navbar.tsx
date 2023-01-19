@@ -28,13 +28,13 @@ const NavBar = () => {
   return (
     <>
       <nav
-        className={` w-full top-0 left-0 z-30 border-b border-crayolalightest ${
+        className={` w-full top-0 left-0 z-30 border-b  border-crayolalightest ${
           isScrolled ? "fixed border-none" : "absolute border-b"
         }`}
       >
         <Container>
           <div
-            className={`px-6 py-4 w-full backdrop-blur-3xl ${
+            className={`px-6 py-4 w-full backdrop-blur-3xl lg:rounded-none rounded-lg ${
               isScrolled || isOpen ? "" : "lg:bg-transparent lg:px-0"
             }`}
           >
@@ -49,15 +49,15 @@ const NavBar = () => {
               </div>
               <div
                 className={`${
-                  isOpen ? "h-fit" : "h-0 "
+                  isOpen ? "h-fit flex" : "h-0 hidden"
                 }space-y-5 mt-4 lg:mt-0 lg:space-y-0 lg:space-x-16 lg:flex lg:place-items-center`}
               >
-                <NavLink href="/class" value="Kelas" canActive={true} />
-                <NavLink href="/course" value="seminar" canActive={true} />
-                <NavLink href="/about" value="Tentang Kami" canActive={true} />
+                <NavLink href="/class" isOpen={isOpen} value="Kelas" canActive={true} />
+                <NavLink href="/course" isOpen={isOpen} value="seminar" canActive={true} />
+                <NavLink href="/about" isOpen={isOpen} value="Tentang Kami" canActive={true} />
               </div>
               <div
-                className={`${isOpen ? "" : "hidden "}lg:block mt-5 lg:mt-0`}
+                className={`${isOpen ? "" : "hidden"} lg:block mt-5 lg:mt-0`}
               >
                 <Button buttonStyle="ButtonBlue" value="Daftar Kursus" />
               </div>

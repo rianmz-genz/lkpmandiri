@@ -27,9 +27,9 @@ const Partner = () => {
             textStyle='TitleTwo'
             value='Bekerja Sama Dengan'
         />
-        <ul className='w-full flex mt-8'>
+        <ul className='w-full grid grid-cols-4 mt-8 place-items-center gap-3'>
         {PartnerList.map((partner)=> (
-            <li key={partner.imageSrc} className='w-3/12'>
+            <li key={partner.imageSrc} className='w-full'>
                 <LogoPartner imageSrc={partner.imageSrc} logoName={partner.logoName} />
             </li>
         ))}

@@ -45,20 +45,20 @@ const UsersReview = () => {
   ];
   return (
     <>
-      <div className="flex justify-between relative">
+      <div className="flex justify-between relative mb-8">
         <SectionParagraph
           title="Pendapat orang-orang tentang LKP Mandiri"
           titleStyle="TitleTwo"
         />
         <Image
-          className=" right-24"
+          className=" right-24 hidden lg:block"
           src={`/images/AccentThumb.svg`}
           alt="Profile User"
           width={80}
           height={80}
         />
         <Image
-          className=" right-0 z-0"
+          className=" right-0 z-0 hidden lg:block"
           src={`/images/AccentStar.svg`}
           alt="Profile User"
           width={80}

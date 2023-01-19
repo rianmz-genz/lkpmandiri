@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const AboutUs = () => {
   return (
-    <div className='w-11/12 flex text-white items-center justify-between'>
+    <div className='w-11/12 flex flex-col-reverse lg:flex-row text-white items-center justify-between'>
         <SectionParagraph 
             title='LKP Mandiri berdedikasi tinggi untuk terus mengejar'
             titleStyle='TitleTwo'
@@ -18,7 +18,7 @@ const AboutUs = () => {
             width={100}
             height={100}
             alt="about image"
-            className="w-5/12"
+            className="lg:w-5/12 w-11/12 mb-6 lg:mb-0"
         />
     </div>
   )

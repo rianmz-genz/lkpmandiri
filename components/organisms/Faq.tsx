@@ -29,14 +29,14 @@ const Faq = () => {
         },
     ]
   return (
-    <section className="w-full h-fit  py-20 flex flex-col items-center">
+    <section className="w-full h-fit py-20 flex flex-col items-center">
       <SectionParagraph
         title="Frequently Asked Questions"
         titleStyle="TitleTwo"
         description="Pertanyaan-pertanyaan yang sering ditanyakan oleh calon peserta didik sebelum mendaftar kursus LKP Mandiri"
         center
       />
-      <ul className="w-8/12 space-y-8">
+      <ul className="lg:w-8/12 space-y-8">
         {Lists.map((list) => (
             <FaqListItem 
                 key={list.title}

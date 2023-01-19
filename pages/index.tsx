@@ -26,7 +26,7 @@ export default function Home() {
       </Head>
       {/* hero section */}
       <Container>
-        <section className="font-ssp w-full h-fit min-h-screen bg-white flex justify-center items-center mx-auto">
+        <section className="font-ssp w-full h-fit min-h-screen bg-white lg:flex-row flex-col-reverse flex justify-center items-center pt-8 lg:pt-0 mx-auto">
           <SectionParagraph
             isButton={true}
             learnMore={true}
@@ -36,7 +36,7 @@ export default function Home() {
             title="Advance your career with LKP MANDIRI"
             description="Tingkatkan kemampuanmu untuk masa depan yang lebih baik dengan program pelatihan komprehensif secara gratis"
           />
-          <aside className="w-6/12">
+          <aside className="lg:w-6/12 w-full">
             <Image
               src="/images/HeroIllustration.svg"
               className="w-full"
