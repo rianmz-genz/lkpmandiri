@@ -82,7 +82,7 @@ const about = () => {
               ))}
               <div className="w-full flex flex-col space-y-3">
                 {graduatedPeoplesHorizontal.map((people) => (
-                  <div className="w-full h-fit space-y-2">
+                  <div key={people.imageUrl} className="w-full h-fit space-y-2">
                     <Image
                       src={people.imageUrl}
                       height={100}
