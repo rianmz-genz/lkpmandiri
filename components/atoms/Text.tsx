@@ -30,9 +30,9 @@ const Text = ({ textStyle, value }: TextProps) => {
       case "TitleThree":
         return "text-2xl font-semibold leading-8";
       case "TitleFour":
-        return "text-xl font-semibold leading-8";
+        return "lg:text-xl text-sm font-semibold ";
       case "TitleFive":
-        return "text-lg font-semibold leading-8";
+        return "lg:text-lg font-semibold leading-8 lg:block hidden";
       case "FaqListTitle":
         return "font-semibold text-crayolalight text-lg";
       case "Description":

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const GalleryCard = () => {
   return (
-    <div className="w-full h-full space-y-4 bg-white border-gray-300 border px-3 py-4 rounded-lg">
+    <div className="w-full h-full lg:block hidden space-y-4 bg-white border-gray-300 border px-3 py-4 rounded-lg">
       <Text textStyle="TitleThree" value="Galeri Kelas" />
       <Image
         src="/images/galleryclass.svg"

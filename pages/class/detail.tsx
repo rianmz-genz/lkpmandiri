@@ -5,12 +5,11 @@ import Text from "../../components/atoms/Text";
 import DescriptionDetailPage from "../../components/organisms/DescriptionDetailPage";
 import GalleryCard from "../../components/molecules/GalleryCard";
 import TopDescriptionCard from "../../components/molecules/TopDescriptionCard";
-import { TfiArrowCircleDown, TfiArrowCircleUp } from "react-icons/tfi";
-import Image from "next/image";
 import SilabusList, {
   SilabusProps,
 } from "../../components/molecules/SilabusList";
 import UserReviewCard from "../../components/molecules/UserReviewCard";
+import ProgramCard, {ProgramCards} from "../../components/molecules/ProgramCard";
 const detail = () => {
   const whatUserGet: string[] = [
     "Ilmu dan keterampilan menjahit",
@@ -83,21 +82,50 @@ const detail = () => {
       meet: "3 Pertemuan",
     },
   ];
+  const moreCourse: ProgramCards[]  = [
+    {
+      imageUrl: "/images/CardIllustrationDesign.svg",
+      title: "Kursus Design Grafis (Tingkat Dasar)",
+      description:
+        "Dalam kursus ini, peserta kursus akan mempelajari prinsip dan teknik dasar desain grafis dan mengembangkan keterampilan dan pengetahuan untuk membuat desain yang memukau secara visual. Kursus ini akan dimulai dengan memperkenalkan elemen dasar desain, seperti teori warna, tipografi, dan komposisi. Anda akan belajar bagaimana menggunakan elemen-elemen ini untuk membuat desain yang kohesif dan efektif.",
+      meet: "42 Pertemuan",
+      month: "4 Bulan",
+      totalMember: "+43",
+    },
+    {
+      imageUrl: "/images/CardIllustrationPhotograph.svg",
+      title: "Kursus Fotografi (Tingkat Dasar)",
+      description:
+        "Dalam kursus ini, peserta kursus akan mempelajari dasar-dasar fotografi dan memperoleh keterampilan serta pengetahuan untuk mengambil foto yang memukau. Kursus ini akan dimulai dengan memperkenalkan peserta kursus pada berbagai jenis kamera dan berbagai fiturnya. Anda akan belajar cara menyusun foto dengan benar, termasuk aturan sepertiga dan garis terdepan.",
+      meet: "32 Pertemuan",
+      month: "2 Bulan",
+      totalMember: "+32",
+    },
+    {
+      imageUrl: "/images/CardIllustrationApt.svg",
+      title: "Kursus Apt Kantor (Tingkat Dasar)",
+      description:
+        "Dalam kursus ini, peserta kursus akan mempelajari keterampilan dan pengetahuan dasar yang diperlukan untuk menggunakan rangkaian aplikasi Microsoft Office secara efektif. Kursus ini akan dimulai dengan memperkenalkan Anda ke rangkaian Microsoft Office dan berbagai aplikasinya, termasuk Word, Excel, PowerPoint, dan Outlook. Anda akan mempelajari cara menavigasi program ini dan menggunakan fitur dasarnya.",
+      meet: "46 Pertemuan",
+      month: "4 Bulan",
+      totalMember: "+23",
+    },
+  ]
   return (
     <PageTemplate>
       {/* aboutCourse */}
-      <section className="py-6 w-full h-fit">
+      <section className="lg:py-6 pt-12 w-full h-fit">
         <div className="w-full h-fit relative">
           {/* banner */}
-          <div className="w-full h-96 bg-[url('/images/detailanner.svg')]"></div>
-          {/* description */}
-          <DescriptionDetailPage />
-          <aside className="w-3/12 h-fit z-20 absolute top-10 right-28 space-y-4">
+          <div className="w-full h-96 bg-[url('/images/detailanner.svg')] hidden lg:block"></div>
+          <aside className="lg:w-3/12 h-fit w-10/12 mx-auto  z-20 lg:absolute top-10 right-28 space-y-4">
             {/* aside description top */}
             <TopDescriptionCard whatUserGet={whatUserGet} />
             {/* gallery class */}
             <GalleryCard />
           </aside>
+          {/* description */}
+          <DescriptionDetailPage />
         </div>
       </section>
       {/* detailSilabus */}
@@ -123,7 +151,7 @@ const detail = () => {
               textStyle="Description"
               value="Mentor kelas ini memiliki pengalaman bertahun-tahun dalam menjahit, menghasilkan karya-karya yang juga pernah mengikuti fashion show ternama, dan juga mendirikan butik di beberapa kota di Indonesia"
             />
-            <div className="w-full flex space-x-4">
+            <div className="w-full flex lg:flex-row flex-col space-y-4 lg:space-x-4">
               <UserReviewCard
                 userName="Dudi hariyadi"
                 imageProfile="/images/Ellipse 5.svg"
@@ -137,6 +165,22 @@ const detail = () => {
                 course="Butik Pencari Mangsa"
               />
             </div>
+          </div>
+          <div className="flex w-full justify-center flex-col items-center my-8">
+              <Text textStyle="TitleTwo" value="Program kursus lainya" />
+              <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
+                {moreCourse.map((course) => (
+                  <ProgramCard
+                  key={course.imageUrl}
+                  imageUrl={course.imageUrl}
+                  title={course.title}
+                  month={course.month}
+                  description={course.description}
+                  totalMember={course.totalMember}
+                  meet={course.meet}
+                />
+                ))}
+              </div>
           </div>
         </Container>
       </section>

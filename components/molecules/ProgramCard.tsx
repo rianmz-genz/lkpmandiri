@@ -69,7 +69,7 @@ const ProgramCard = ({
             <Text textStyle="CardPlus" value={totalMember} />
           </div>
         </div>
-        <div className="lg:w-8/12 w-6/12 flex justify-between">
+        <div className="lg:w-8/12 w-6/12 flex justify-end space-x-3">
           <Text textStyle="ButtonText" value={meet} />
           <Text textStyle="ButtonText" value={month} />
         </div>
