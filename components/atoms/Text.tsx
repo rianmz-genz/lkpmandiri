@@ -30,7 +30,7 @@ const Text = ({ textStyle, value }: TextProps) => {
       case "TitleThree":
         return "text-2xl font-semibold leading-8";
       case "TitleFour":
-        return "lg:text-xl text-sm font-semibold ";
+        return "lg:text-xl font-semibold ";
       case "TitleFive":
         return "lg:text-lg font-semibold leading-8 lg:block hidden";
       case "FaqListTitle":
@@ -40,9 +40,9 @@ const Text = ({ textStyle, value }: TextProps) => {
       case "DetailDescription":
         return "font-poppins font-semibold text-sm"
       case "CardDescription":
-        return "font-poppins font-light text-sm leading-6 text-elipsis lg:h-24 inline-block overflow-hidden";
+        return "font-poppins text-sm leading-6 text-elipsis lg:h-24 inline-block overflow-hidden";
       case "CardPlus":
-        return "font-poppins font-light text-xs";
+        return "font-poppins text-xs";
       case "ButtonText":
         return "font-semibold lg:text-base text-sm";
       case "FooterTitle":
@@ -54,7 +54,7 @@ const Text = ({ textStyle, value }: TextProps) => {
       case "UserNameReview":
         return "font-semibold text-sm";
       case "UserClassReview":
-        return "font-poppins font-light text-xs";
+        return "font-poppins text-xs";
       case "MoreUnderline":
         return "font-semibold underline";
       default:

@@ -10,6 +10,7 @@ interface Paragraph {
   center?: boolean;
   titleStyle?: string;
   buttonValue?: string;
+  full?: boolean
 }
 const SectionParagraph = ({
   buttonStyle,
@@ -20,10 +21,11 @@ const SectionParagraph = ({
   center = false,
   titleStyle,
   buttonValue,
+  full = false,
 }: Paragraph) => {
   return (
     <aside
-      className={`lg:w-6/12 w-full h-fit space-y-8 relative ${
+      className={` ${full ? "w-full" : "lg:w-6/12"} w-full h-fit space-y-8 relative ${
         center ? "text-center flex flex-col items-center justify-center" : ""
       }`}
     >
@@ -33,7 +35,6 @@ const SectionParagraph = ({
         ) : (
           <Text textStyle="TitleTwo" value={title} />
         )}
-
         <Text textStyle="Description" value={description} />
       </div>
       <div className="flex items-center space-x-5">

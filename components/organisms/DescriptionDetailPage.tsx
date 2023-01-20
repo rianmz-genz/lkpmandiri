@@ -5,7 +5,7 @@ import Text from "../atoms/Text";
 const DescriptionDetailPage = () => {
   return (
     <Container>
-      <aside className="lg:w-8/12 w-full mt-4 px-3 py-4 h-fit bg-palatinelight space-y-6 rounded-lg">
+      <aside className="lg:w-8/12 w-full mt-4 px-3 py-4 h-fit bg-palatinelight space-y-3 lg:space-y-6 rounded-lg">
         <Text textStyle="TitleTwo" value="Kelas Menjahit (Tingkat Dasar)" />
         <Text
           textStyle="Description"
