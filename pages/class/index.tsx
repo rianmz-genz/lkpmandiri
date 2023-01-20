@@ -1,9 +1,9 @@
 import React from 'react'
-import PageTemplate from '../components/templates/PageTemplate';
+import PageTemplate from '../../components/templates/PageTemplate';
 import Head from 'next/head';
-import ProgramCard, {ProgramCards} from '../components/molecules/ProgramCard';
-import Container from '../components/templates/Container';
-import Text from '../components/atoms/Text';
+import ProgramCard, {ProgramCards} from '../../components/molecules/ProgramCard';
+import Container from '../../components/templates/Container';
+import Text from '../../components/atoms/Text';
 const Class = () => {
     const Courses:ProgramCards[] = [
         {
@@ -111,7 +111,7 @@ const Class = () => {
             <link rel="icon" href="/images/Logo.svg" />
         </Head>
         <Container>
-        <section className='w-full  h-fit min-h-screen py-8'>
+        <section className='w-full  h-fit min-h-screen py-14'>
             <Text textStyle='TitleTwo' value='Program Kursus LKP Mandiri' />
             <div className='lg:grid-cols-3 grid-cols-1 grid place-content-center gap-4 mt-7'>
             {Courses.map((course) => (

@@ -57,7 +57,7 @@ const SectionParagraph = ({
       </div>
       {learnMore ? (
         <>
-        {/* space for span because span absolute */}
+          {/* space for span because span absolute */}
           <div className="h-28"></div>
           <div className="lg:w-8/12 w-full border absolute bottom-0 left-2 border-crayoladark z-20 flex py-7 rounded-xl bg-white">
             <div className="flex flex-col w-4/12 items-center">

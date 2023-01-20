@@ -16,26 +16,16 @@ const NavBar = () => {
       }
     });
   }, []);
-  useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add("h-screen");
-      document.body.classList.add("overflow-y-hidden");
-    } else {
-      document.body.classList.remove("h-screen");
-      document.body.classList.remove("overflow-y-hidden");
-    }
-  }, [isOpen]);
   return (
     <>
       <nav
-        className={` w-full top-0 left-0 z-30 border-b  border-crayolalightest ${
-          isScrolled ? "fixed border-none" : "absolute border-b"
+        className={` w-full top-0 left-0 z-30 border-b lg:px-8 border-crayolalightest ${
+          isScrolled ? "fixed border-none backdrop-blur-3xl" : "absolute border-b  "
         }`}
       >
-        <Container>
           <div
-            className={`px-6 py-4 w-full backdrop-blur-3xl lg:rounded-none rounded-lg ${
-              isScrolled || isOpen ? "" : "bg-transparent lg:px-0"
+            className={`px-6 py-4 w-full ${
+              isScrolled || isOpen ? "" : "bg-transparent bg-white bg-opacity-30 lg:px-0"
             }`}
           >
             <div className="flex flex-col lg:flex-row w-full place-content-between lg:place-items-center">
@@ -49,12 +39,27 @@ const NavBar = () => {
               </div>
               <div
                 className={`${
-                  isOpen ? "h-fit flex" : "h-0 hidden"
+                  isOpen ? "h-fit" : "h-0 hidden"
                 }space-y-5 mt-4 lg:mt-0 lg:space-y-0 lg:space-x-16 lg:flex lg:place-items-center`}
               >
-                <NavLink href="/class" isOpen={isOpen} value="Kelas" canActive={true} />
-                <NavLink href="/course" isOpen={isOpen} value="seminar" canActive={true} />
-                <NavLink href="/about" isOpen={isOpen} value="Tentang Kami" canActive={true} />
+                <NavLink
+                  href="/class"
+                  isOpen={isOpen}
+                  value="Kelas"
+                  canActive={true}
+                />
+                <NavLink
+                  href="/course"
+                  isOpen={isOpen}
+                  value="seminar"
+                  canActive={true}
+                />
+                <NavLink
+                  href="/about"
+                  isOpen={isOpen}
+                  value="Tentang Kami"
+                  canActive={true}
+                />
               </div>
               <div
                 className={`${isOpen ? "" : "hidden"} lg:block mt-5 lg:mt-0`}
@@ -63,7 +68,7 @@ const NavBar = () => {
               </div>
             </div>
           </div>
-        </Container>
+
       </nav>
     </>
   );

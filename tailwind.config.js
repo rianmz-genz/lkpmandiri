@@ -12,6 +12,8 @@ module.exports = {
        crayolamidledark: "#0A3061",
        crayoladark: "#072449",
        crayoladarkest: "#051830",
+       palatinelight: "#EAEBFE",
+       cgblue: "#D0E7F4",
       },
       fontFamily:{
         'nunito': ['Nunito'],

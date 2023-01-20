@@ -21,10 +21,7 @@ export default function Home() {
           name="description"
           content="Company Profile Slicing Design By Adrian Aji Septa"
         />
-        <meta
-          name="title"
-          content="LKP MANDIRI"
-        />
+        <meta name="title" content="LKP MANDIRI" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/Logo.svg" />
       </Head>
@@ -67,7 +64,7 @@ export default function Home() {
         <AboutUs />
       </section>
       {/* user review */}
-      <section className="w-full h-fit my-10 px-[60px]">
+      <section className="w-full h-fit my-10 lg:px-[60px]">
         <UsersReview />
       </section>
     </PageTemplate>
